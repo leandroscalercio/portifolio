@@ -1,0 +1,111 @@
+.container_skills {
+  justify-content: center;
+  align-items: center;
+}
+.container_skills h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  text-decoration: underline #f2bb62;
+}
+.certificados {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 10vw);
+  grid-gap: 15px;
+}
+
+.cert1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.cert2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cert3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.cert4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.certificados img {
+  width: 100%;
+}
+
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill_name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill_bar {
+  height: 14px;
+  background: #000;
+  border-radius: 3px;
+}
+
+.skill_per {
+  height: 14px;
+  background: #f2bb62;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill_per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f2bb62;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -5px;
+  right: 0;
+  transform: translateX(50%);
+  color: #000;
+  font-weight: bold;
+}
+
+.skill_per::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f2bb62;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

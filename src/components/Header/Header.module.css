@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px;
+  border-bottom: 1px solid #f2bb62;
+}
+
+img {
+  max-width: 100%;
+  width: 240px;
+}

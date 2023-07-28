@@ -1,0 +1,14 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.form_container img {
+  width: 200px;
+}
+
+.form_container a {
+  margin-right: 80px;
+}
