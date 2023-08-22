@@ -1,10 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 import styles from './Skills.module.css';
-import cert1 from '../../assets/cert1.jpg';
-import cert2 from '../../assets/cert2.jpg';
-import cert3 from '../../assets/cert3.jpg';
-import cert4 from '../../assets/cert4.jpg';
-
 const Skills = () => {
   return (
     <>
@@ -138,22 +133,6 @@ const Skills = () => {
                 ></div>
               </div>
             </div>
-          </div>
-        </div>
-        <h2>Certificados:</h2>
-
-        <div className={styles.certificados}>
-          <div className={styles.cert1}>
-            <img src={cert1} alt="" />
-          </div>
-          <div className={styles.cert2}>
-            <img src={cert2} alt="" />
-          </div>
-          <div className={styles.cert3}>
-            <img src={cert3} alt="" />
-          </div>
-          <div className={styles.cert4}>
-            <img src={cert4} alt="" />
           </div>
         </div>
       </div>

@@ -29,12 +29,17 @@ a {
 
 .container_image img {
   border-radius: 10px;
-  filter: grayscale(1);
-  transition: 0.4s;
+  transform: scale(2);
+  filter: grayscale();
 }
 
-.container_image img:hover {
-  border-radius: 10px;
-  filter: grayscale(0);
-  transition: 0.4s;
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .container_image img {
+    margin-top: 150px;
+  }
 }

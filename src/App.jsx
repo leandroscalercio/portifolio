@@ -7,6 +7,7 @@ import Skills from './pages/Skills/Skills';
 import Projects from './pages/Projects/Projects';
 import NotFound from './pages/NotFound/NotFound';
 import Contact from './pages/Contact/Contact';
+import Certificados from './pages/Certificados/Certificados';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/certificates" element={<Certificados />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

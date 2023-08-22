@@ -3,20 +3,19 @@
   list-style: none;
   text-transform: uppercase;
   font-weight: bold;
+  gap: 40px;
 }
 
 .nav_menu a {
   cursor: pointer;
-  padding: 5px;
-  margin: 0 10px 0 10px;
-  transition: 0.5s;
   text-decoration: none;
   color: #fff;
+  display: inline-block;
+  border: 2px solid transparent;
 }
 
 .nav_menu a:hover {
-  border-top: 1px solid #fab732;
-  border-bottom: 1px solid #fab732;
-  transition: 0.5s;
+  border-top: 2px solid #fab732;
+  border-bottom: 2px solid #fab732;
   color: #fab732;
 }
